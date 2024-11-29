@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Form</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f16c6c;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .login-container {
+      background: white;
+      width: 350px;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    .login-container h1 {
+      text-align: center;
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+    .login-container input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+    .login-container a {
+      text-decoration: none;
+      font-size: 14px;
+      color: #666;
+      display: block;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .button-container {
+      display: flex;
+      justify-content: space-between;
+    }
+    .button-container button {
+      width: 48%;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .button-container .register {
+      background: #e0e0e0;
+      color: black;
+    }
+    .button-container .sign-in {
+      background: #333;
+      color: white;
+    }
+    .button-container button:hover {
+      opacity: 0.9;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <h1>Login</h1>
+    <form action="game-menu.html">
+      <input type="email" placeholder="Email" required>
+      <input type="password" placeholder="Password" required>
+      <a href="#">FORGOT YOUR PASSWORD?</a>
+      <div class="button-container">
+        <button class="register" type="button">REGISTER</button>
+        <button class="sign-in" type="submit">SIGN IN</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
